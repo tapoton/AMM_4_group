@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-	float sum=10000, prirost = 0, sumbuf=0, prirostsum=0;
+	float sum=10000, growth = 0, sumbuf=0, growthsum=0;
 	bool flag1 = false, flag2 = false;
 
 	for (int i = 0; i < 12; i++)
@@ -15,16 +15,16 @@ int main()
 		cout << "Summa vklada za " << i + 1 << " mesyats ot marta: " << sum << endl;
 		if (i < 10)
 		{
-			prirost = sum - sumbuf;
-			prirostsum += prirost;
-			cout << "Prirost( " << i+1 << " mesyats):" << prirost << ";";
-			if ((prirost > 300) && (flag1 == false))
+			growth = sum - sumbuf;
+			growthsum += growth;
+			cout << "Prirost( " << i+1 << " mesyats):" << growth << ";";
+			if ((growth > 300) && (flag1 == false))
 			{
 				cout << endl << i + 1 << " mesyats, velichina prirosta previsila 300" << endl;
 				flag1 = true;
 			}
 		}
-		if ((prirostsum > 1200) && (flag2 == false))
+		if ((growthsum > 1200) && (flag2 == false))
 		{
 			cout << endl << "Spystya " << i + 1 << " mesyatsev velichina vklada previsila 1200." << endl;
 			flag2 = true;
